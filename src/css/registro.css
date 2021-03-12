@@ -1,0 +1,114 @@
+@import url(menu.css);
+
+:root{
+    --red:#ff2e63;
+    --black:#252a34;
+    --blue:#08d9d6;
+    /* --white:#eaeaea; */
+    --white:#ffffff;
+    --wt:#ddfbff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #fff;
+    overflow-x: hidden;
+    font-family: 'Raleway',sans-serif;
+}
+
+#header{
+    position: relative;
+    width: 100%;
+}
+
+
+
+.formulario{
+    padding: 60px;
+}
+
+/****/
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url(../img/pexels-jill-wellington-3776939.jpg);
+    background-size: cover;
+}
+
+.box{
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    padding: 35px;
+    background: rgba(0, 0, 0, .8);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .5);
+    border-radius: 10px;
+}
+
+.box h2{
+    margin: 0 0 25px;
+    padding: 0;
+    color: #ffffff;
+    text-align: center;
+}
+
+.box .inputBox{
+    position: relative;
+}
+
+.box .inputBox input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    outline: none; 
+    background: transparent;
+}
+
+.box .inputBox label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    pointer-events: none;
+    transition: .5s;
+}
+.box .inputBox input:focus ~  label,
+.box .inputBox input:valid ~  label{
+    top: -20px;
+    left: 0;
+    color: var(--red);
+    font-size: 12px;
+}
+
+.box input[type="submit"]{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    background: var(--red);
+    padding: 10px 50px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.registrarse{
+    text-decoration: none;
+    color: var(--red);
+}
